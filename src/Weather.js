@@ -65,6 +65,7 @@ const Weather = () => {
 
   return (
     <div className="search-box">
+    <h2>chanduTech</h2>
       <input
         type="text"
         className="search-bar"
