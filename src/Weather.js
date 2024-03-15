@@ -55,7 +55,7 @@ const Weather = () => {
 
   const search = () => {
     if (query.trim() !== "") {
-      fetchData();
+      // fetchData();
     }
   };
 
