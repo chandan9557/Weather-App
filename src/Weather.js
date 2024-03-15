@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./Weather.css";
 
 const Weather = () => {
-  const api = {
-    key: "11919206ab1cd022a735df3eb09e5468",
-    base: "https://api.openweathermap.org/data/2.5/",
-  };
+  // const api = {
+  //   key: "11919206ab1cd022a735df3eb09e5468",
+  //   base: "https://api.openweathermap.org/data/2.5/",
+  // };
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
@@ -13,6 +13,10 @@ const Weather = () => {
   const [currentTime, setCurrentTime] = useState(""); // State for current time
 
   useEffect(() => {
+    const api = {
+      key: "11919206ab1cd022a735df3eb09e5468",
+      base: "https://api.openweathermap.org/data/2.5/",
+    };
     const fetchData = async () => {
       try {
         const response = await fetch(
