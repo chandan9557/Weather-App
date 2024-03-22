@@ -82,7 +82,7 @@ const Weather = () => {
       )}
       {weather && (
         <div className="weather-info">
-          <h2>{weather.name}</h2>
+          <h2>{weather.name},{weather.sys.country}</h2>
           <p>{weather.weather[0].description}</p>
           <p>Temperature: {weather.main.temp}°C</p>
           <p>Humidity: {weather.main.humidity}%</p>
